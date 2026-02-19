@@ -109,6 +109,10 @@ The fingerprint is a given pipe seperated seed for the engine to generate a repo
 - fingerprint[7]: value of generations.alpha, if multiple requests are sent then these are then normalised.
 - fingerprint[8]: Filler text if needed.
 
+## Checksum
+
+The checksum is the fingerprint[1] added together for all the inputs and then converted to hex.
+
 ## Performance Characteristics
 
 These stats were made on a **t3.small** using:
