@@ -95,7 +95,7 @@ This project was created for the assessment of the subject CSSE6400 Software Arc
 
 ## Fingerprint
 
-The fingerprint is a given pipe seperated seed for the engine to generate a report. The first number is a boolean 0/1 which is the malicious status of the email. The second number is the iterations of the BCRYPT hash. It is recommended to keep the iterations within 8 -> 20.
+The fingerprint is a given pipe seperated seed for the engine to generate a report.
 
 - fingerprint[0]: iterations of the BCRYPT hash, recommended to be between 8 -> 20 iterations, if the value is 0 then the BCRYPT is skipped.
 - fingerprint[1]: value of Age that should be outputted, if multiple requests are sent then these are averaged.
