@@ -1,8 +1,8 @@
 # Engine
 
-**Note**: This project is for the assessment of the subject CSSE6400 Software Architecture at the University of Queensland and is not intended for any other usage.
-
 A command line interface for processing the requested content.
+
+**Note**: This project is for use in the cloud infrastructure assessment of the course CSSE6400 Software Architecture at the University of Queensland and is not intended for any other usage.
 
 ## Installation
 
@@ -91,7 +91,9 @@ Example Output:
 
 ## Motivation
 
-This project was created for the assessment of the subject CSSE6400 Software Architecture at the University of Queensland.  It is intended to generate an output that requires work, this version accomplishes this by computing an arbitrary BCRYPT hash which is thrown away. The program then generates a report based on the information given to it.
+This project was created for use in the cloud infrastructure assessment of the course CSSE6400 Software Architecture at the University of Queensland.
+It is intended to generate an output that requires work, this version accomplishes this by computing an arbitrary BCRYPT hash which is thrown away.
+The program then generates a report based on the information given to it.
 
 ## Fingerprint
 
