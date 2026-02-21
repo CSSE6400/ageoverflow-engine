@@ -29,8 +29,9 @@ Reports are generated from a JSON file like so:
 {
   "id": "ABCD-1234",
   "content": [
-    "QXJjaGl0ZWN0dXJlIGlzIGFib3V0IHRoZSBpbXBvcnRhbnQgc3R1ZmYuIFdoYXRldmVyIHRoYXQgaXMu",
-    "YSBzb2Z0d2FyZSBhcmNoaXRlY3Qgd2hvIGNvZGVzIGlzIGEgbW9yZSBlZmZlY3RpdmUgYW5kIGhhcHBpZXIgYXJjaGl0ZWN0"
+    "MHwyOXwwfDB8MHwxMDB8MHwwfE1pbGxpZSB0aGUgbGFzdCBvZiB0aGUgbWlsbGVubmlhbHMuIA==",
+    "MHwyOXwwfDB8MHw2MHw0MHwwfE1pbGxpZSB0aGUgbGFzdCBvZiB0aGUgbWlsbGVubmlhbHMgb3IgdGhlIGZpcnN0IG9mIHRoZSBab29tZXJzPy4g",
+    "MHwyOXwwfDB8MTB8MzV8NTV8MHxNaWxsaWUgdGhlIGZpcnN0IG9mIHRoZSBtaWxsZW5uaWFscy4g"
   ]
 }
 ```
@@ -74,14 +75,14 @@ Example Output:
 {
   "id": "ABCD-1234",
   "results": {
-    "checksum": "ABCDEF123456",
+    "checksum": "0x57",
     "generations": {
       "silent": 0,
-      "baby_boomers": 5,
-      "x": 15,
-      "y": 40,
-      "z": 30,
-      "alpha": 10
+      "baby_boomers": 0,
+      "x": 3,
+      "y": 65,
+      "z": 31,
+      "alpha": 0
     },
     "primary_generation": "y",
     "age": 29

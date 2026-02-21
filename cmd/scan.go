@@ -9,18 +9,17 @@ import (
 	"engine/service"
 )
 
-var scanCmd = &cobra.Command{
-	Use:   "scan",
-	Short: "Scan the given email and generate a security report",
-	Long: `Generate a security report with the given input file as describe by:
+var computeCmd = &cobra.Command{
+	Use:   "compute",
+	Short: "Compute the given inputs and generate a report",
+	Long: `Generate a report with the given input file as describe by:
 
 	{
 		"id": "ABCD-1234",
-		"content": "Hey Valued Student\nHows the assignment going?\nRegards\nEvan Hughes",
-		"metadata": "0|16"
+		"content": [
+			"QXJjA...."
+		]
 	}
-
-	Where the content is the email body and the metadata is the SpamHammer metadata value from the original request. 
 `,
 	Run: func(cmd *cobra.Command, args []string) {
 		input, _ := cmd.Flags().GetString("input")
@@ -44,8 +43,8 @@ var scanCmd = &cobra.Command{
 			errorAndClose(err, output)
 		}
 
-		scanner := service.NewScanner()
-		report, err := scanner.ScanEmail(request)
+		compute := service.NewCompute()
+		report, err := compute.Process(request)
 		if err != nil {
 			errorAndClose(err, output)
 		}
@@ -76,7 +75,7 @@ var scanCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(scanCmd)
-	scanCmd.Flags().StringP("input", "i", "-", "Path of the input file, if value is '-' then read from STDIN")
-	scanCmd.Flags().StringP("output", "o", "-", "Path of the output file without extension, if value is '-' then write to STDOUT")
+	rootCmd.AddCommand(computeCmd)
+	computeCmd.Flags().StringP("input", "i", "-", "Path of the input file, if value is '-' then read from STDIN")
+	computeCmd.Flags().StringP("output", "o", "-", "Path of the output file without extension, if value is '-' then write to STDOUT")
 }

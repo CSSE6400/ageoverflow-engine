@@ -1,0 +1,16 @@
+{
+    "id": "SLOW-1234",
+    "results": {
+        "checksum": "0x1d",
+        "generations": {
+            "silent": 0,
+            "baby_boomers": 0,
+            "x": 10,
+            "y": 35,
+            "z": 55,
+            "alpha": 0
+        },
+        "primary_generation": "z",
+        "age": 29
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "id": "ABCD-1234",
+    "results": {
+        "checksum": "0x57",
+        "generations": {
+            "silent": 0,
+            "baby_boomers": 0,
+            "x": 3,
+            "y": 65,
+            "z": 31,
+            "alpha": 0
+        },
+        "primary_generation": "y",
+        "age": 29
+    }
+}
