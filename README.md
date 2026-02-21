@@ -14,6 +14,9 @@ This package must be installed by collecting the static binary given in the rele
 
 For installing the latest version inside a dockerfile the following can be used.
 
+> [!WARNING]
+> This example uses a specified version number. You should update to the latest available version.
+
 ```dockerfile
 FROM ubuntu:latest
 
