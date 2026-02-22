@@ -120,7 +120,7 @@ The program then generates a report based on the information given to it.
 
 ## Fingerprint
 
-The fingerprint is a given pipe seperated seed for the engine to generate a report.
+The fingerprint embedded in the base64 content is a given pipe seperated seed for the engine to generate a report.
 
 - fingerprint[0]: iterations of the BCRYPT hash, recommended to be between 8 -> 20 iterations, if the value is 0 then the BCRYPT is skipped.
 - fingerprint[1]: value of Age that should be outputted, if multiple requests are sent then these are averaged.
