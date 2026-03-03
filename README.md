@@ -20,7 +20,7 @@ For installing the latest version inside a dockerfile the following can be used.
 ```dockerfile
 FROM ubuntu:latest
 
-ARG ENGINE_VERSION=v0.9.0
+ARG ENGINE_VERSION=v1.0.0
 
 RUN apt-get update && apt-get install -y curl
 
@@ -156,6 +156,6 @@ Contributions are welcome but the project is for the usage in an assessment so s
 
 ## Changes
 
-### No Releases
+### v1.0.0
 
-No releases have been made.
+- Initial release
